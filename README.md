@@ -1,6 +1,9 @@
 # aspnet-alert-scriptmanager-js
 apart from AlertMessage mrthod to show a pop up alert message at the top to notify certain important message to the user, but here if we redirect to other page then it wont work as the thread will be abanded, so we can use server side method using JavaScipt to render HTML code and send the alert prompt to the user which works even with redirect
 
+Snippet page refernce
+`https://www.codeproject.com/Tips/284507/how-to-show-the-message-and-redirect-to-other-page`
+
 ## 3 Types of ScriptManager codes
 
 ### 1. Alert message and Redirect
