@@ -7,7 +7,7 @@ https://www.codeproject.com/Tips/284507/how-to-show-the-message-and-redirect-to-
 ## 3 Types of ScriptManager codes
 
 ### 1. Alert message and Redirect
-showing alert message to user and then redirecting from `Home` to `Welcome`
+showing alert message to user and then redirecting from `Home` to `Welcome`  
 `Home.aspx.cs`
 ```
 //redirect with only message
@@ -18,7 +18,7 @@ ScriptManager.RegisterStartupScript(this, this.GetType(), "messageScript", scrip
 ```
 
 ### 2. Alert message and Redirect with parameters in URL
-showing alert message to user and then redirecting from `Home2` to `Welcome2` while passing parameters in the url so to use those parameters in redirected page (for fetching the user details, etc)
+showing alert message to user and then redirecting from `Home2` to `Welcome2` while passing parameters in the url so to use those parameters in redirected page (for fetching the user details, etc)  
 `Home2.aspx.cs`
 ```
 // redirect with message and with parameter
@@ -30,8 +30,8 @@ string redirectUrl = $"Welcome2.aspx?name={name}&address={address}&state={state}
 
 string script = $"alert('{message}');location.href = '{redirectUrl}';";
 ScriptManager.RegisterStartupScript(this, this.GetType(), "messageScript", script, true);
-```
-`Welcome2.aspx.cs`
+```  
+`Welcome2.aspx.cs`  
 ```
 protected void Page_Load(object sender, EventArgs e)
     {
@@ -52,8 +52,8 @@ protected void Page_Load(object sender, EventArgs e)
 ```
 
 ### 3. Alert message and Redirect with parameters in URL with User confirmation (OK / Cancel)
-showing alert message to user and then redirecting from `Home3` to `Welcome3` while passing parameters in the url so to use those parameters in redirected page, only when user clicks on `OK` button and if `cancel` button is clicked then redirecting stops
-`Home3.aspx.cs`
+showing alert message to user and then redirecting from `Home3` to `Welcome3` while passing parameters in the url so to use those parameters in redirected page, only when user clicks on `OK` button and if `cancel` button is clicked then redirecting stops  
+`Home3.aspx.cs`  
 ```
 // redirect with message and with parameter only on user cinfirmation
         string name = "Milind";
@@ -73,8 +73,8 @@ showing alert message to user and then redirecting from `Home3` to `Welcome3` wh
 
         // Register the JavaScript code
         ScriptManager.RegisterStartupScript(this, this.GetType(), "redirectScript", script, true);
-```
-`Welcome3.aspx.cs`
+```  
+`Welcome3.aspx.cs`  
 ```
 protected void Page_Load(object sender, EventArgs e)
     {
