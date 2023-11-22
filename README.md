@@ -4,6 +4,8 @@ apart from AlertMessage mrthod to show a pop up alert message at the top to noti
 Snippet page refernce  
 https://www.codeproject.com/Tips/284507/how-to-show-the-message-and-redirect-to-other-page
 
+### `using System.Web.UI;` name space is required
+
 ## 3 Types of ScriptManager codes
 
 ### 1. Alert message and Redirect
